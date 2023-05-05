@@ -1,9 +1,12 @@
 "use client";
 import { configureStore } from "@reduxjs/toolkit";
-//import reducers
+import notificationsReducer from "./features/notificationSlice/notificationSlice";
 
 export const store = configureStore({
   reducer: {
-    //count: countReducer
+    notifications: notificationsReducer,
   },
 });
+
+export type RootState = ReturnType<typeof store.getState>;
+export type AppDispatch = typeof store.dispatch;

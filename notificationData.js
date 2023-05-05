@@ -1,16 +1,6 @@
-import { useId } from "react";
+"use client";
 
-interface NotificationType {
-  friendName: String;
-  friendPic: String;
-  notificationType: String;
-  notificationValue: String;
-  read: Boolean;
-  time: string;
-  id: string;
-}
-
-export const notifications: NotificationType[] = [
+export const notifications = [
   {
     friendName: "Mark Webber",
     friendPic: "url",
@@ -18,7 +8,7 @@ export const notifications: NotificationType[] = [
     notificationValue: "My first tournament today!",
     read: false,
     time: "1m",
-    id: useId(),
+    id: 1,
   },
   {
     friendName: "Angela Gray",
@@ -27,7 +17,7 @@ export const notifications: NotificationType[] = [
     notificationValue: "",
     read: false,
     time: "5m",
-    id: useId(),
+    id: 2,
   },
   {
     friendName: "Jacob Thompson",
@@ -36,7 +26,7 @@ export const notifications: NotificationType[] = [
     notificationValue: "Chess Club",
     read: false,
     time: "1 day",
-    id: useId(),
+    id: 3,
   },
   {
     friendName: "Rizky Hassanuddin",
@@ -46,7 +36,7 @@ export const notifications: NotificationType[] = [
       "Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and I'm already having lots of fun and improving my game.",
     read: false,
     time: "5 days",
-    id: useId(),
+    id: 4,
   },
   {
     friendName: "Kimberly Smith",
@@ -55,7 +45,7 @@ export const notifications: NotificationType[] = [
     notificationValue: "pic URL",
     read: false,
     time: "1 week",
-    id: useId(),
+    id: 5,
   },
   {
     friendName: "Nathan Peterson",
@@ -64,7 +54,7 @@ export const notifications: NotificationType[] = [
     notificationValue: "5 end-game strategies to increase your win rate",
     read: false,
     time: "2 weeks",
-    id: useId(),
+    id: 6,
   },
   {
     friendName: "Anna Kim",
@@ -73,6 +63,6 @@ export const notifications: NotificationType[] = [
     notificationValue: "Chess Club",
     read: false,
     time: "2 weeks",
-    id: useId(),
+    id: 7,
   },
 ];
