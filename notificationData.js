@@ -3,7 +3,7 @@
 export const notifications = [
   {
     friendName: "Mark Webber",
-    friendPic: "url",
+    friendPic: "/images/avatar-mark-webber.webp",
     notificationType: "reacted to your recent post",
     notificationValue: "My first tournament today!",
     read: false,
